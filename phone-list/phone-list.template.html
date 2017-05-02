@@ -1,0 +1,14 @@
+<div class="row">
+	<div class="col-md-4">
+		<ul class="list-group">
+			<li class="list-group-item" ng-repeat="phone in $ctrl.phones">
+				<a ui-sref="phones.phoneDetail({ phoneId: phone.id })">
+					{{ phone.name }}
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="col-md-8">
+		<ui-view></ui-view>
+	</div>
+</div>

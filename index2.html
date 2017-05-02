@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="src/js/angular.min.js"></script>
+	<script type="text/javascript" src="app2.js"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="ctrl as c">
+		{{ c.jsonD | json }}
+	</div>
+</body>
+</html>

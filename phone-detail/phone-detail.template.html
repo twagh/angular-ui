@@ -1,0 +1,27 @@
+<div class="row">
+	<div class="col-md-6">
+		<img src="{{ $ctrl.mainImage }}" class="img-responsive">
+	</div>
+	<div class="col-md-6">
+		<h3>{{ $ctrl.phone.name }}</h3>
+		<p>{{ $ctrl.phone.description }}</p>
+		<div class="row">
+			<div class="col-md-4" ng-repeat="img in $ctrl.phone.images">
+				<img ng-src="{{ img }}" ng-click="$ctrl.changeImg(img)" class="img-responsive">
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <div>
+	<h3>{{ $ctrl.phone.name }}</h3>
+	<div>
+		<img ng-src="{{ $ctrl.mainImage }}" width="200" height="200">
+	</div>
+	<div>
+		<img ng-src="{{ img }}" ng-repeat="img in $ctrl.phone.images" width="50" height="50" ng-click="$ctrl.changeImg(img)">
+	</div>
+	<div>
+		<a ui-sref="phones">Back</a>
+	</div>
+</div> -->

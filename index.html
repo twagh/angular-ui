@@ -1,0 +1,51 @@
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<base href="http://localhost/tushar/demo/">
+
+	<style>.active { color: red; font-weight: bold; }</style>
+</head>
+
+<body ng-app="phoneApp">
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">	
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- <a class="navbar-brand" href="#">Project name</a> -->
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li ui-sref-active="active"><a ui-sref="phones">Phones</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+
+	<div class="container">
+		<ui-view></ui-view>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="src/js/angular.min.js"></script>
+	<script src="//npmcdn.com/angular-ui-router@1.0.0-alpha.4/release/angular-ui-router.js"></script>
+	<script src="phone-list/phone-list.module.js"></script>
+	<script src="phone-detail/phone-detail.module.js"></script>
+	<script src="phone-list/phone-list.service.js"></script>
+	<script src="app.module.js"></script>
+	<script src="app.config.js"></script>
+	<script src="phone-list/phone-list.component.js"></script>
+	<script src="phone-detail/phone-detail.component.js"></script>
+	<!-- <script src="app.config.js"></script> -->
+	<!-- <script src="app.config.js"></script> -->
+	<!-- <script src="app.config.js"></script> -->
+	<!-- <script src="app.config.js"></script> -->
+</body>
+</html>
